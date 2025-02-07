@@ -6,15 +6,22 @@ img: image
 a: anchor(mỏ neo: Đặt liên kết)
 ul, ol, li: unordered list, ordered list, list
 table (có thead và tbody)
+input
+button
+div: Thẻ bao quanh các khối
 -->
 <html>
-    <!-- head -->
-    <head>
-        <title>F8 - Shop</title>
-        <meta charset="UTF-8">
-    </head>
-    <!-- body -->
-    <body>
+<!-- head -->
+
+<head>
+    <title>F8 - Shop</title>
+    <meta charset="UTF-8">
+</head>
+<!-- body -->
+
+<body>
+    <div>
+        <button>Đăng ký</button>
         <ul>
             <li>1</li>
             <li>2</li>
@@ -23,12 +30,15 @@ table (có thead và tbody)
         </ul>
         <table>
             <thead>
+                <!-- th = table head: bảng có bao nhiêu cột tiêu đề thì bấy nhiêu thth -->
                 <th>STT</th>
                 <th>Tên</th>
                 <th>Địa chỉ</th>
             </thead>
             <tbody>
+                <!-- tr = table row: bao nhiêu bản ghi thì bấy nhiêu hàng -->
                 <tr>
+                    <!-- td == table data:: Định nghĩa 1 ô trong bảngbảng-->
                     <td>1</td>
                     <td>Sơn</td>
                     <td>Hà Nội</td>
@@ -45,5 +55,7 @@ table (có thead và tbody)
                 </tr>
             </tbody>
         </table>
-    </body>
+    </div>
+</body>
+
 </html>
