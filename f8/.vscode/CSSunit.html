@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<!--absolute và relative -->
+<!-- absolute không bị ảnh hưởng bởi các yếu tố kháckhác-->
+<!-- relative phụ thuộc vào phần tử cha, viewport hoặc kích thước font -->
+<!-- 
+%: Tính theo phần trăm của phần tử cha chứa nónó
+rem: Tính theo font-size của thẻ html
+em: Tính theo font-size của thẻ cha gần nhất tìm thấy
+
+-->
+<head>
+    <title>Unit  in CSS</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSSunit.css">
+    <style>
+        html{
+            font-size: 100%;
+        }
+        .box{
+            width: 50vw;
+            height: 50vh;
+            background-color: red;
+        }
+        h1{
+            font-size: 1rem;
+        }
+
+        /* vw - width, vh - height*/
+        /* viewport */
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <!-- Thẻ cha gần nhất chứa thẻ h1h1 -->
+    <div style="font-size: 50px;"> 
+        <h1>CSS  Unit?</h1>
+    </div>
+</body>
+
+</html>
